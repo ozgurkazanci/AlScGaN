@@ -1,0 +1,25 @@
+# Deny everything at the top level, then allow back only the paper and the code.
+#
+# This folder is a working directory, not a repository root. It also contains a
+# TUBITAK-JSPS grant application, a funding proposal, and a copyrighted
+# third-party PDF. None of those belong in a shared repository, so the default
+# here is to publish nothing and opt files in explicitly.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/manuscript/
+!/simulation/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# an older duplicate of the built manuscript
+/manuscript/MANUSCRIPT_claude.docx
+
+# internal Turkish working notes, not part of the published package
+/simulation/RESUME.md
+
+# alternative single-author drafts, kept locally, not published
+/manuscript/Relaxation_time_in_wurtzite_AlScGaN_symbolic*.docx

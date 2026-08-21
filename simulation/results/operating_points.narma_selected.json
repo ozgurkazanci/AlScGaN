@@ -1,0 +1,66 @@
+{
+  "graded": {
+    "bias": 0.35,
+    "gain": 0.02,
+    "mask_spread": 0.45,
+    "theta": 0.002,
+    "center_mult": 1.0,
+    "span_decades": 1.0,
+    "tau_lo": 0.03162277660168379,
+    "tau_hi": 0.316227766016838,
+    "select_nrmse": 0.5793476076655527
+  },
+  "homogeneous": {
+    "bias": 0.5,
+    "gain": 0.02,
+    "mask_spread": 0.45,
+    "theta": 0.002,
+    "center_mult": 3.0,
+    "span_decades": 0.25,
+    "tau_lo": 0.22496826279973678,
+    "tau_hi": 0.40005642964899724,
+    "select_nrmse": 0.6123986543896605
+  },
+  "uniform": {
+    "bias": 0.45,
+    "gain": 0.02,
+    "mask_spread": 0.15,
+    "theta": 0.002,
+    "center_mult": 10.0,
+    "span_decades": 1.0,
+    "tau_lo": 0.31622776601683794,
+    "tau_hi": 3.1622776601683795,
+    "select_nrmse": 0.7543817973560781
+  },
+  "stochastic": {
+    "bias": 0.65,
+    "gain": 0.02,
+    "mask_spread": 0.15,
+    "theta": 0.002,
+    "center_mult": 1.0,
+    "span_decades": 2.0,
+    "tau_lo": 0.01,
+    "tau_hi": 1.0,
+    "select_nrmse": 0.6056327879355438
+  },
+  "esn": {
+    "spectral_radius": 0.9,
+    "leak": 1.0,
+    "input_scale": 0.25,
+    "bias_scale": 0.5,
+    "select_nrmse": 0.23854735960626627
+  },
+  "_meta": {
+    "n_pads_select": 4,
+    "select_seeds": [
+      101,
+      102,
+      103
+    ],
+    "ec_target": 2.7,
+    "n_seg": 16,
+    "m_virtual": 50,
+    "scheme": "bias",
+    "readout": "charge"
+  }
+}

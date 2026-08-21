@@ -1,0 +1,41 @@
+  quaternary: Ec 2.700-2.700 MV/cm (spread 1.78e-15), tau 0.000949-94.9 s (5.00 decades)
+     ternary: Ec 3.757-7.406 MV/cm (spread 3.65), tau 0.000949-0.0116 s (1.09 decades)
+
+requested window: 5.00 decades - the ternary reaches 1.09 of them before leaving the physical composition range
+
+drive sweep: 100 runs
+
+      design   bias   driven            NL-MC   lin MC
+  quaternary   0.20     0.00     0.011 +- 0.011     1.18
+  quaternary   0.30     0.33     0.052 +- 0.040     4.68
+  quaternary   0.40     1.00     1.012 +- 0.012     5.14
+  quaternary   0.50     1.00     1.981 +- 0.050     5.39
+  quaternary   0.65     1.00     3.047 +- 0.030     3.36
+  quaternary   0.80     1.00     2.973 +- 0.081     1.26
+  quaternary   1.00     1.00     1.258 +- 0.042     1.14
+  quaternary   1.30     1.00     1.301 +- 0.152     1.05
+  quaternary   1.70     0.00     0.348 +- 0.227     1.03
+  quaternary   2.20     0.00     0.330 +- 0.146     1.04
+     ternary   0.20     0.25     0.267 +- 0.061     0.75
+     ternary   0.30     0.25     1.302 +- 0.083     1.02
+     ternary   0.40     1.00     1.840 +- 0.149     1.04
+     ternary   0.50     1.00     2.241 +- 0.036     1.05
+     ternary   0.65     1.00     1.457 +- 0.030     1.04
+     ternary   0.80     1.00     2.623 +- 0.068     1.16
+     ternary   1.00     0.75     0.333 +- 0.126     0.90
+     ternary   1.30     0.75     1.178 +- 0.068     1.04
+     ternary   1.70     0.00     0.599 +- 0.199     1.04
+     ternary   2.20     0.00     0.371 +- 0.140     1.04
+
+Best of each, each at its own drive:
+    quaternary: NL-MC 3.047 at bias 0.65, 100% of segments usefully driven
+       ternary: NL-MC 2.623 at bias 0.8, 100% of segments usefully driven
+  quaternary advantage: +0.424 (+16%)
+
+Temperature sweep, each design at its own best drive:
+    quaternary: NL-MC 3.047 at 300 K, largest drift over 275-325 K 0.067 (2.2%)
+       ternary: NL-MC 2.623 at 300 K, largest drift over 275-325 K 0.601 (22.9%)
+    quaternary: switching rate spread across the array at its drive: 0.0 decades
+       ternary: switching rate spread across the array at its drive: 3.7 decades
+
+Wrote results/ternary_control.json (79 s)

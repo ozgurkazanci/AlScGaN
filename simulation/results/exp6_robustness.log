@@ -1,0 +1,35 @@
+A. temperature sweep
+         graded: NL-MC at 300 K = 3.092, largest drift over 275-325 K = 0.073 (2.4%)
+    homogeneous: NL-MC at 300 K = 3.034, largest drift over 275-325 K = 0.016 (0.5%)
+        uniform: NL-MC at 300 K = 2.433, largest drift over 275-325 K = 0.891 (36.6%)
+B. bandgap-bowing sensitivity
+         graded: NL-MC linear 3.092 vs bowed 3.095 (+0.1%)
+    homogeneous: NL-MC linear 3.034 vs bowed 3.037 (+0.1%)
+        uniform: NL-MC linear 2.433 vs bowed 2.439 (+0.3%)
+C. spectral span and discrete ladders
+   span 0.0 dec: NL-MC 2.567 +- 0.200, linMC 1.06, NARMA 0.842
+   span 1.0 dec: NL-MC 3.119 +- 0.062, linMC 2.71, NARMA 0.825
+   span 2.0 dec: NL-MC 3.120 +- 0.087, linMC 3.14, NARMA 0.823
+   span 3.0 dec: NL-MC 3.108 +- 0.073, linMC 3.38, NARMA 0.825
+   span 4.0 dec: NL-MC 3.095 +- 0.077, linMC 3.38, NARMA 0.824
+   span 5.0 dec: NL-MC 3.092 +- 0.078, linMC 3.29, NARMA 0.825
+    1 distinct tau: NL-MC 2.567 +- 0.200, linMC 1.06
+    2 distinct tau: NL-MC 2.536 +- 0.417, linMC 1.81
+    3 distinct tau: NL-MC 2.763 +- 0.282, linMC 1.92
+    4 distinct tau: NL-MC 2.881 +- 0.178, linMC 2.02
+    6 distinct tau: NL-MC 2.797 +- 0.278, linMC 2.82
+    8 distinct tau: NL-MC 3.051 +- 0.032, linMC 2.88
+   12 distinct tau: NL-MC 3.055 +- 0.038, linMC 3.18
+   16 distinct tau: NL-MC 3.065 +- 0.048, linMC 3.21
+D. numerical convergence
+   segments/pad   4: NL-MC 3.075 linMC 3.35
+   segments/pad   8: NL-MC 3.067 linMC 3.31
+   segments/pad  16: NL-MC 3.065 linMC 3.29
+   segments/pad  32: NL-MC 3.065 linMC 3.28
+   segments/pad  64: NL-MC 3.060 linMC 3.27
+   virtual nodes   10: NL-MC 2.204 linMC 2.02
+   virtual nodes   25: NL-MC 3.037 linMC 2.71
+   virtual nodes   50: NL-MC 3.065 linMC 3.29
+   virtual nodes  100: NL-MC 3.079 linMC 3.31
+
+Wrote results/robustness.json  (216 s)

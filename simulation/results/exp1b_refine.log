@@ -1,0 +1,16 @@
+720 configurations across 4 designs
+  200/720  (69 s)
+  400/720  (141 s)
+  600/720  (207 s)
+
+Refined operating points:
+        graded: NL-MC 3.192 -> 3.528  theta=0.002 centre=3.0xframe span=5.0dec spread=0.3 tau 0.000949-94.9 s
+                interior optimum
+   homogeneous: NL-MC 2.879 -> 3.269  theta=0.002 centre=1.0xframe span=4.0dec spread=0.3 tau 0.001-10 s
+                at grid edge for center_mult
+    stochastic: NL-MC 2.862 -> 3.181  theta=0.002 centre=3.0xframe span=5.0dec spread=0.45 tau 0.000949-94.9 s
+                interior optimum
+       uniform: NL-MC 2.208 -> 2.277  theta=0.001 centre=3.0xframe span=0.25dec spread=0.3 tau 0.112-0.2 s
+                at grid edge for span_decades
+
+Rewrote results\operating_points.json  (244 s)

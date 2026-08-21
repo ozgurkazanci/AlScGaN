@@ -1,0 +1,53 @@
+graded : SegmentedFilm(n=16, x=0.183-0.609, y=0.345-0.352, Ec=2.700-2.700 MV/cm, tau=0.000949-94.9 s [5.00 dec], T=300 K)
+uniform: SegmentedFilm(n=16, x=0.396-0.396, y=0.349-0.349, Ec=2.700-2.700 MV/cm, tau=0.3-0.3 s [0.00 dec], T=300 K)
+
+P-E loops (100 Hz triangular):
+    graded at  0.6 Ec: Ec+ = n/a MV/cm, Pr =   -64.7, P range   -67.9.. -64.7
+    graded at  1.0 Ec: Ec+ = n/a MV/cm, Pr =   -22.1, P range   -30.1..   4.8
+    graded at  1.4 Ec: Ec+ =  3.02 MV/cm, Pr =   -86.0, P range   -99.0..  99.0
+    graded at  1.7 Ec: Ec+ =  3.06 MV/cm, Pr =   -87.3, P range   -99.1..  99.1
+    graded at  2.0 Ec: Ec+ =  3.10 MV/cm, Pr =   -88.3, P range   -99.2..  99.2
+   uniform at  0.6 Ec: Ec+ = n/a MV/cm, Pr =   -89.7, P range   -92.8.. -89.7
+   uniform at  1.0 Ec: Ec+ = n/a MV/cm, Pr =   -26.8, P range   -37.5..   0.0
+   uniform at  1.4 Ec: Ec+ =  3.04 MV/cm, Pr =   -98.5, P range   -99.2..  99.2
+   uniform at  1.7 Ec: Ec+ =  3.09 MV/cm, Pr =   -98.6, P range   -99.2..  99.2
+   uniform at  2.0 Ec: Ec+ =  3.12 MV/cm, Pr =   -98.7, P range   -99.2..  99.2
+
+Retention after positive poling (normalized P):
+    graded: P0 =   99.0 uC/cm2, t(1/2) = 0.203 s, log-slope spread = 3.02
+   uniform: P0 =   99.2 uC/cm2, t(1/2) = 0.21 s, log-slope spread = 4.57
+
+Drive-regime scan (4-pad graded array):
+  bias 0.35: r_sw   9.6e-08 1/s, switch/sample  9.6e-09, leak-dominated 1.00, NL-MC  1.12, linMC  4.96, NARMA 0.685, rank  2.16
+  bias 0.40: r_sw  7.36e-06 1/s, switch/sample 7.36e-07, leak-dominated 1.00, NL-MC  2.05, linMC  5.05, NARMA 0.668, rank  2.10
+  bias 0.45: r_sw  0.000226 1/s, switch/sample 2.26e-05, leak-dominated 1.00, NL-MC  2.11, linMC  5.14, NARMA 0.648, rank  2.00
+  bias 0.50: r_sw   0.00362 1/s, switch/sample 0.000362, leak-dominated 1.00, NL-MC  2.12, linMC  5.38, NARMA 0.647, rank  1.77
+  bias 0.55: r_sw    0.0358 1/s, switch/sample  0.00358, leak-dominated 0.89, NL-MC  2.56, linMC  5.81, NARMA 0.636, rank  1.43
+  bias 0.60: r_sw     0.245 1/s, switch/sample   0.0245, leak-dominated 0.72, NL-MC  3.03, linMC  4.84, NARMA 0.744, rank  1.28
+  bias 0.65: r_sw      1.26 1/s, switch/sample    0.126, leak-dominated 0.59, NL-MC  3.14, linMC  3.18, NARMA 0.853, rank  1.23
+  bias 0.70: r_sw      5.18 1/s, switch/sample    0.518, leak-dominated 0.45, NL-MC  3.03, linMC  1.37, NARMA 0.920, rank  1.20
+  bias 0.75: r_sw      17.7 1/s, switch/sample     1.77, leak-dominated 0.36, NL-MC  2.67, linMC  1.20, NARMA 0.936, rank  1.16
+  bias 0.80: r_sw      52.4 1/s, switch/sample     5.24, leak-dominated 0.27, NL-MC  3.03, linMC  1.13, NARMA 0.902, rank  1.10
+  bias 0.85: r_sw       136 1/s, switch/sample     13.6, leak-dominated 0.17, NL-MC  3.00, linMC  1.16, NARMA 0.905, rank  1.17
+  bias 0.90: r_sw       321 1/s, switch/sample     32.1, leak-dominated 0.11, NL-MC  2.75, linMC  1.15, NARMA 0.907, rank  1.10
+  best nonlinear memory at bias = 0.65, where 59% of segments are leakage-dominated
+
+Feedback loop-gain scan (the loop is what makes it recurrent):
+  fb  0.000: NL-MC  1.35, linMC  3.09, NARMA 0.840
+  fb  0.001: NL-MC  3.05, linMC  3.13, NARMA 0.847
+  fb  0.003: NL-MC  3.14, linMC  3.18, NARMA 0.853
+  fb  0.006: NL-MC  2.94, linMC  3.00, NARMA 0.843
+  fb  0.010: NL-MC  1.28, linMC  1.67, NARMA 0.856
+  fb  0.020: NL-MC  0.43, linMC  1.03, NARMA 0.933
+  fb  0.030: NL-MC  0.01, linMC  0.97, NARMA 0.963
+  fb  0.050: NL-MC  0.00, linMC  0.52, NARMA 0.973
+  fb  0.100: NL-MC  0.25, linMC  0.47, NARMA 0.981
+  fb  0.300: NL-MC  0.00, linMC  0.00, NARMA 1.047
+  open loop NL-MC = 1.35; best 3.14 at gain 0.003; usable window [0.001, 0.006]
+
+Memory-capacity profile at the regime optimum:
+        graded: MC =  3.18 (surrogate total floor 0.02+-0.01, per-delay threshold 0.0039), memory significant to delay 7
+   homogeneous: MC =  2.08 (surrogate total floor 0.02+-0.01, per-delay threshold 0.0043), memory significant to delay 7
+       uniform: MC =  1.14 (surrogate total floor 0.02+-0.01, per-delay threshold 0.0034), memory significant to delay 6
+
+Wrote results/device_char.npz and device_summary.json

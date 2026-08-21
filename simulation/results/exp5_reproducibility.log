@@ -1,0 +1,107 @@
+B. regularization versus transferability (selection seeds)
+   graded:
+      lambda      own   transfer       strict   penalty
+       1e-06   0.7304  1321.3496    2.155e+04 +1320.6191
+       1e-04   0.7719   142.9437         1688 +142.1718
+       1e-02   0.7943    10.4078        158.6   +9.6134
+       1e-01   0.7964     3.9733        85.42   +3.1769
+       1e+00   0.8002     2.1177        45.63   +1.3174
+       1e+01   0.8100     1.1253        25.47   +0.3153
+       1e+02   0.8204     0.9005        15.84   +0.0800
+       1e+03   0.8587     0.9136         8.74   +0.0549
+       1e+04   0.9755     0.9982        2.771   +0.0228
+       1e+05   1.0376     1.0407        1.079   +0.0032
+   stochastic:
+      lambda      own   transfer       strict   penalty
+       1e-06   0.7438  1498.5456    2.333e+04 +1497.8018
+       1e-04   0.7821   208.5849         2787 +207.8029
+       1e-02   0.8081    24.3941        498.4  +23.5859
+       1e-01   0.8169     7.7797        147.2   +6.9628
+       1e+00   0.8262     2.6872        60.26   +1.8610
+       1e+01   0.8403     1.4428         36.8   +0.6025
+       1e+02   0.8617     1.0752        20.57   +0.2136
+       1e+03   0.9152     1.0004        10.13   +0.0852
+       1e+04   1.0084     1.0281        2.509   +0.0197
+       1e+05   1.0424     1.0448        1.044   +0.0025
+   selected transfer regularization: lambda = 100 (5 s)
+
+A. deposition-noise sweep (54 groups of 20 devices)
+  sigma       design     NRMSE  inter-dev sd  state corr   transfer       strict
+  0.000       graded    0.8037       0.00000      1.0000    -0.0000   -7.401e-17
+  0.000   stochastic    0.8058       0.00243      0.9975     0.0820        3.961
+  0.000  homogeneous    0.8089       0.00000      1.0000    -0.0000   -3.701e-17
+  0.005       graded    0.7734       0.03433      0.9774     0.0569        4.891
+  0.005   stochastic    0.7657       0.03625      0.9773     0.1157        8.476
+  0.005  homogeneous    0.7765       0.02120      0.9778     0.0277        3.321
+  0.010       graded    0.6769       0.04910      0.9226     0.1048        13.76
+  0.010   stochastic    0.6603       0.05161      0.9284     0.1753        17.28
+  0.010  homogeneous    0.6839       0.05130      0.9244     0.2337        19.78
+  0.020       graded    0.6532       0.03069      0.8449     0.1992        186.3
+  0.020   stochastic    0.6253       0.03438      0.8566     0.2365        87.06
+  0.020  homogeneous    0.6535       0.03031      0.8478     0.2292        377.6
+  0.030       graded    0.6652       0.03305      0.8392     0.1888          124
+  0.030   stochastic    0.6368       0.03264      0.8532     0.1809        131.7
+  0.030  homogeneous    0.6724       0.04034      0.8412     0.1904        193.8
+  0.050       graded    0.6679       0.03743      0.8673     0.1173        243.6
+  0.050   stochastic    0.6479       0.02746      0.8839     0.1287        254.8
+  0.050  homogeneous    0.6654       0.03545      0.8692     0.1175        212.8
+
+Fabrication budget (graded versus stochastic, paired across input realizations):
+  sigma=0.000: transfer penalty graded=0.0000 stochastic=0.0878 (ratio 87811654.41x), paired p=0.00195
+  sigma=0.005: transfer penalty graded=0.0528 stochastic=0.1263 (ratio  2.39x), paired p=0.00195
+  sigma=0.010: transfer penalty graded=0.1144 stochastic=0.1808 (ratio  1.58x), paired p=0.00586
+  sigma=0.020: transfer penalty graded=0.2310 stochastic=0.2335 (ratio  1.01x), paired p=0.77
+  sigma=0.030: transfer penalty graded=0.1879 stochastic=0.1761 (ratio  0.94x), paired p=0.557
+  sigma=0.050: transfer penalty graded=0.1086 stochastic=0.1079 (ratio  0.99x), paired p=0.557
+  fabrication budget: the designed spread stops being measurably more transferable at sigma = 0.02 in cation fraction
+
+C. measurement noise and switching jitter (36 groups)
+      design  Ec jitter  SNR (dB)              NRMSE
+      graded      0.000       inf      0.6843 +- 0.0452
+      graded      0.000        60      0.8714 +- 0.0181
+      graded      0.000        50      0.8961 +- 0.0220
+      graded      0.000        45      0.9032 +- 0.0191
+      graded      0.000        40      0.9167 +- 0.0175
+      graded      0.000        35      0.9314 +- 0.0177
+      graded      0.000        30      0.9472 +- 0.0191
+      graded      0.000        25      0.9635 +- 0.0197
+      graded      0.000        20      0.9775 +- 0.0200
+      graded      0.010       inf      0.9158 +- 0.0116
+      graded      0.010        60      0.9308 +- 0.0194
+      graded      0.010        50      0.9393 +- 0.0177
+      graded      0.010        45      0.9466 +- 0.0158
+      graded      0.010        40      0.9564 +- 0.0165
+      graded      0.010        35      0.9673 +- 0.0199
+      graded      0.010        30      0.9790 +- 0.0244
+      graded      0.010        25      0.9927 +- 0.0295
+      graded      0.010        20      1.0092 +- 0.0348
+      graded      0.030       inf      0.9983 +- 0.0185
+      graded      0.030        60      1.0027 +- 0.0162
+      graded      0.030        50      1.0072 +- 0.0162
+      graded      0.030        45      1.0104 +- 0.0154
+      graded      0.030        40      1.0159 +- 0.0150
+      graded      0.030        35      1.0239 +- 0.0161
+      graded      0.030        30      1.0324 +- 0.0185
+      graded      0.030        25      1.0407 +- 0.0218
+      graded      0.030        20      1.0502 +- 0.0261
+ homogeneous      0.000       inf      0.6943 +- 0.0447
+ homogeneous      0.000        60      0.8684 +- 0.0229
+ homogeneous      0.000        50      0.8848 +- 0.0221
+ homogeneous      0.000        45      0.8964 +- 0.0203
+ homogeneous      0.000        40      0.9105 +- 0.0180
+ homogeneous      0.000        35      0.9257 +- 0.0172
+ homogeneous      0.000        30      0.9387 +- 0.0190
+ homogeneous      0.000        25      0.9564 +- 0.0203
+ homogeneous      0.000        20      0.9758 +- 0.0222
+  spread advantage (homogeneous minus graded NRMSE) versus SNR:
+      inf dB: +0.0100
+       60 dB: -0.0030
+       50 dB: -0.0113
+       45 dB: -0.0068
+       40 dB: -0.0062
+       35 dB: -0.0057
+       30 dB: -0.0085
+       25 dB: -0.0070
+       20 dB: -0.0016
+
+Wrote results/reproducibility.json  (369 s)

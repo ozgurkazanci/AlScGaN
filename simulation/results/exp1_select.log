@@ -1,0 +1,59 @@
+
+Stage A - drive parameters: 864 configurations
+   100/864  (52 s)
+   200/864  (91 s)
+   300/864  (142 s)
+   400/864  (187 s)
+   500/864  (227 s)
+   600/864  (273 s)
+   700/864  (316 s)
+   800/864  (359 s)
+         graded: NL-MC=2.511  bias=0.65 gain=0.05 spread=0.3 theta=0.001 centre=1.0xframe span=2.0dec fb=0.01
+    homogeneous: NL-MC=2.339  bias=0.55 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=2.0dec fb=0.01
+     stochastic: NL-MC=2.534  bias=0.55 gain=0.05 spread=0.45 theta=0.002 centre=1.0xframe span=2.0dec fb=0.01
+        uniform: NL-MC=2.049  bias=0.55 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=2.0dec fb=0.01
+
+Stage B - designed time-constant window: 120 configurations
+   30/120  (14 s)
+   60/120  (27 s)
+   90/120  (41 s)
+   120/120  (52 s)
+         graded: NL-MC=2.884  bias=0.65 gain=0.05 spread=0.3 theta=0.001 centre=3.0xframe span=4.0dec fb=0.01
+    homogeneous: NL-MC=2.500  bias=0.55 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=1.0dec fb=0.01
+     stochastic: NL-MC=2.706  bias=0.55 gain=0.05 spread=0.45 theta=0.002 centre=10.0xframe span=4.0dec fb=0.01
+        uniform: NL-MC=2.049  bias=0.55 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=0.25dec fb=0.01
+
+Stage C - loop gain and drive: 672 configurations
+   100/672  (55 s)
+   200/672  (98 s)
+   300/672  (143 s)
+   400/672  (192 s)
+   500/672  (239 s)
+   600/672  (286 s)
+         graded: NL-MC=3.192  bias=0.65 gain=0.1 spread=0.3 theta=0.001 centre=3.0xframe span=4.0dec fb=0.003
+    homogeneous: NL-MC=2.879  bias=0.65 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=1.0dec fb=0.003
+     stochastic: NL-MC=2.862  bias=0.55 gain=0.1 spread=0.45 theta=0.002 centre=10.0xframe span=4.0dec fb=0.003
+        uniform: NL-MC=2.208  bias=0.65 gain=0.1 spread=0.3 theta=0.002 centre=1.0xframe span=0.25dec fb=0.003
+
+Stage D - ESN baseline: 300 configurations x 2 weight seeds
+   60/300  (797 s)
+   120/300  (830 s)
+   180/300  (862 s)
+   240/300  (903 s)
+   300/300  (923 s)
+   selected: NL-MC=9.000 rho=0.6 leak=1.0 input_scale=0.25 bias_scale=0.5
+
+Boundary check (a selected value at a grid edge means the search was truncated):
+        graded: at a grid edge for theta, span_decades
+   homogeneous: interior optimum
+       uniform: at a grid edge for span_decades
+    stochastic: at a grid edge for mask_spread, center_mult, span_decades
+
+Final operating points:
+        graded: {'bias': 0.65, 'gain': 0.1, 'mask_spread': 0.3, 'theta': 0.001, 'center_mult': 3.0, 'span_decades': 4.0, 'feedback': 0.003, 'tau_lo': 0.0015, 'tau_hi': 15.0, 'select_nlmc': 3.1916719999999996, 'grid_edge_hits': ['theta', 'span_decades']}
+   homogeneous: {'bias': 0.65, 'gain': 0.1, 'mask_spread': 0.3, 'theta': 0.002, 'center_mult': 1.0, 'span_decades': 1.0, 'feedback': 0.003, 'tau_lo': 0.03162277660168379, 'tau_hi': 0.316227766016838, 'select_nlmc': 2.878648, 'grid_edge_hits': []}
+       uniform: {'bias': 0.65, 'gain': 0.1, 'mask_spread': 0.3, 'theta': 0.002, 'center_mult': 1.0, 'span_decades': 0.25, 'feedback': 0.003, 'tau_lo': 0.07498942093324559, 'tau_hi': 0.1333521432163324, 'select_nlmc': 2.208296, 'grid_edge_hits': ['span_decades']}
+    stochastic: {'bias': 0.55, 'gain': 0.1, 'mask_spread': 0.45, 'theta': 0.002, 'center_mult': 10.0, 'span_decades': 4.0, 'feedback': 0.003, 'tau_lo': 0.01, 'tau_hi': 100.0, 'select_nlmc': 2.862424, 'grid_edge_hits': ['mask_spread', 'center_mult', 'span_decades']}
+           esn: {'spectral_radius': 0.6, 'leak': 1.0, 'input_scale': 0.25, 'bias_scale': 0.5, 'select_nlmc': 9.0}
+
+Wrote results\operating_points.json  (923 s total)

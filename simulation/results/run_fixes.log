@@ -1,0 +1,8 @@
+=== START exp3_device 00:23:01
+=== DONE exp3_device 00:25:13
+=== START exp7_ternary 00:25:13
+=== DONE exp7_ternary 00:26:16
+=== START exp5_reproducibility 00:26:16
+=== DONE exp5_reproducibility 00:36:10
+=== FIXES FINISHED
+=== DONE exp6_robustness 00:40:40

@@ -1,0 +1,56 @@
+{
+  "graded": {
+    "bias": 0.55,
+    "gain": 0.05,
+    "mask_spread": 0.15,
+    "theta": 0.01,
+    "center_mult": 1.0,
+    "span_decades": 2.0,
+    "tau_lo": 0.05,
+    "tau_hi": 5.0,
+    "select_nrmse": 0.61
+  },
+  "homogeneous": {
+    "bias": 0.55,
+    "gain": 0.05,
+    "mask_spread": 0.15,
+    "theta": 0.01,
+    "center_mult": 1.0,
+    "span_decades": 2.0,
+    "tau_lo": 0.05,
+    "tau_hi": 5.0,
+    "select_nrmse": 0.61
+  },
+  "uniform": {
+    "bias": 0.55,
+    "gain": 0.05,
+    "mask_spread": 0.15,
+    "theta": 0.01,
+    "center_mult": 1.0,
+    "span_decades": 2.0,
+    "tau_lo": 0.05,
+    "tau_hi": 5.0,
+    "select_nrmse": 0.61
+  },
+  "stochastic": {
+    "bias": 0.55,
+    "gain": 0.05,
+    "mask_spread": 0.15,
+    "theta": 0.01,
+    "center_mult": 1.0,
+    "span_decades": 2.0,
+    "tau_lo": 0.05,
+    "tau_hi": 5.0,
+    "select_nrmse": 0.61
+  },
+  "esn": {
+    "spectral_radius": 0.9,
+    "leak": 0.3,
+    "input_scale": 1.0,
+    "bias_scale": 0.2,
+    "select_nrmse": 0.55
+  },
+  "_meta": {
+    "stub": true
+  }
+}

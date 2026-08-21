@@ -1,0 +1,89 @@
+{
+  "graded": {
+    "bias": 0.65,
+    "gain": 0.1,
+    "mask_spread": 0.3,
+    "theta": 0.002,
+    "center_mult": 3.0,
+    "span_decades": 5.0,
+    "feedback": 0.003,
+    "tau_lo": 0.0009486832980505137,
+    "tau_hi": 94.86832980505139,
+    "select_nlmc": 3.52832,
+    "grid_edge_hits": [],
+    "refined": true
+  },
+  "homogeneous": {
+    "bias": 0.65,
+    "gain": 0.1,
+    "mask_spread": 0.3,
+    "theta": 0.002,
+    "center_mult": 1.0,
+    "span_decades": 4.0,
+    "feedback": 0.003,
+    "tau_lo": 0.001,
+    "tau_hi": 10.0,
+    "select_nlmc": 3.2686,
+    "grid_edge_hits": [
+      "center_mult"
+    ],
+    "refined": true
+  },
+  "uniform": {
+    "bias": 0.65,
+    "gain": 0.1,
+    "mask_spread": 0.3,
+    "theta": 0.001,
+    "center_mult": 3.0,
+    "span_decades": 0.25,
+    "feedback": 0.003,
+    "tau_lo": 0.11248413139986838,
+    "tau_hi": 0.2000282148244986,
+    "select_nlmc": 2.277336,
+    "grid_edge_hits": [
+      "span_decades"
+    ],
+    "refined": true
+  },
+  "stochastic": {
+    "bias": 0.55,
+    "gain": 0.1,
+    "mask_spread": 0.45,
+    "theta": 0.002,
+    "center_mult": 3.0,
+    "span_decades": 5.0,
+    "feedback": 0.003,
+    "tau_lo": 0.0009486832980505137,
+    "tau_hi": 94.86832980505139,
+    "select_nlmc": 3.181216,
+    "grid_edge_hits": [],
+    "refined": true
+  },
+  "esn": {
+    "spectral_radius": 0.6,
+    "leak": 1.0,
+    "input_scale": 0.25,
+    "bias_scale": 0.5,
+    "select_nlmc": 9.0
+  },
+  "_boundary_hits": true,
+  "_meta": {
+    "objective": "nonlinear memory capacity (delayed parity)",
+    "n_pads_select": 4,
+    "select_seeds": [
+      101,
+      102
+    ],
+    "d_max_select": 8,
+    "ec_target": 2.7,
+    "n_seg": 16,
+    "m_virtual": 50,
+    "scheme": "bias",
+    "readout": "charge",
+    "refined_axes": [
+      "theta",
+      "center_mult",
+      "span_decades"
+    ]
+  }
+}
